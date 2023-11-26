@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="NPFinal">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/NPFinal/gson-2.8.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/NPFinal/mysql-connector-java-8.0.20.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
