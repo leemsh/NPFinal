@@ -30,7 +30,13 @@ public class HTTPRequestController {
 	
 	public void setGetRequest(PrintWriter pw,String requestParam){
 		//TODO : 상품 조회를 요청하는 GET /{학번} API Request를  필수헤더를 포함하여 구성하시오
-
+		pw.println("GET /201911275 HTTP/1.1");
+		pw.println("Host: "+host);
+		pw.println("Content-Type : application/json; charset=utf-8");
+		pw.println("Content-Length : "+requestParam.getBytes().length);
+		pw.println();
+		pw.println(requestParam);
+		pw.flush();
 	}
 	
 	

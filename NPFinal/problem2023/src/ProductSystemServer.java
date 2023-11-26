@@ -39,7 +39,13 @@ public class ProductSystemServer {
 			while (true) {
 				try {
 					//TODO : 요청이 올때마다 Thread 생성하고 Handling 하시오
-					
+
+
+					Socket connection = server.accept();
+					HTTPHandler handler = new HTTPHandler(connection);
+					pool.submit(handler);
+
+
 				} catch (IOException ex) {
 					logger.log(Level.WARNING, "Exception accepting connection", ex);
 				} catch (RuntimeException ex) {
